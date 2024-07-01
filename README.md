@@ -5,6 +5,9 @@ This repository contains various image processing implementations on Python prod
 
 Last page update 01-07-2024
 
+## Description
+The folder comprises various subfolders containing a Vivado HLS project of the image processing function for IP generation and the Vivado codesign using the Advanced eXtensible Interface (AXI) communication.
+
 ## List of algorithms
 1. RGB2Gray
 
