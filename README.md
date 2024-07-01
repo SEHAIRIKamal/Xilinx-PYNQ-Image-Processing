@@ -6,7 +6,7 @@ This repository contains various image processing implementations on Python prod
 Last page update 01-07-2024
 
 ## Description
-The folder comprises various subfolders containing a Vivado HLS project of the image processing function for IP generation and the Vivado codesign using the Advanced eXtensible Interface (AXI) communication.
+The folder comprises various subfolders containing a Vivado HLS project of the image processing function for IP generation and the Vivado codesign using the Advanced eXtensible Interface (AXI) communication. All the designs were tested on the Pynq-Z1 board and work for other new boards; see supported boards.
 
 ## List of algorithms
 1. RGB2Gray
@@ -36,6 +36,11 @@ The folder comprises various subfolders containing a Vivado HLS project of the i
 13. Harris Corner detection (RGB 3x3)
 
 14. FAST Corner detection RGB
+
+## Supported Boards
+* Zynq-7000 boards: Pynq-Z1, Pynq-Z2, etc.
+* Zynq Ultrascale boards: KV260, Pynq-ZU, Ultra96, ZCU104, etc.
+* PCIE Alveo cards: U200, U250, U280.
 
 ## Citation
 
