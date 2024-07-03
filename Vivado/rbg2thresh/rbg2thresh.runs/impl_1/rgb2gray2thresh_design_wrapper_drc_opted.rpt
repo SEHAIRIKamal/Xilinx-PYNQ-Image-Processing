@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Aug 29 11:10:50 2023
+| Host         : Kamal-PC running 64-bit major release  (build 9200)
+| Command      : report_drc -file rgb2gray2thresh_design_wrapper_drc_opted.rpt -pb rgb2gray2thresh_design_wrapper_drc_opted.pb -rpx rgb2gray2thresh_design_wrapper_drc_opted.rpx
+| Design       : rgb2gray2thresh_design_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+------------------+------------+
+| Rule   | Severity | Description      | Violations |
++--------+----------+------------------+------------+
+| DPIP-1 | Warning  | Input pipelining | 1          |
++--------+----------+------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP rgb2gray2thresh_design_i/rgb2gray2thresh_accel_0/inst/rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg input rgb2gray2thresh_design_i/rgb2gray2thresh_accel_0/inst/rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+

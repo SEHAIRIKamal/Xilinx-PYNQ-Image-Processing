@@ -1,0 +1,774 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Sep 25 16:47:53 2023
+# Process ID: 21292
+# Current directory: C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1
+# Command line: vivado.exe -log modefilter_design_modefilter_accel_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source modefilter_design_modefilter_accel_0_0.tcl
+# Log file: C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1/modefilter_design_modefilter_accel_0_0.vds
+# Journal file: C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1\vivado.jou
+# Running On: Kamal-PC, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 34226 MB
+#-----------------------------------------------------------
+source modefilter_design_modefilter_accel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1452.727 ; gain = 151.219
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/modefilter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: modefilter_design_modefilter_accel_0_0
+Command: synth_design -top modefilter_design_modefilter_accel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16656
+WARNING: [Synth 8-10515] begin/end is required for generate-for in this mode of Verilog [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:72]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2307.348 ; gain = 410.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'modefilter_design_modefilter_accel_0_0' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ip/modefilter_design_modefilter_accel_0_0/synth/modefilter_design_modefilter_accel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_control_s_axi' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_control_s_axi.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_control_s_axi' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_Block_entry1_proc' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_Block_entry1_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_Block_entry1_proc' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_Block_entry1_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_axis2xfMat_24_16_3840_2160_1_s' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_axis2xfMat_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_flow_control_loop_pipe_sequential_init' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_flow_control_loop_pipe_sequential_init' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_regslice_both' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_regslice_both' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_regslice_both__parameterized0' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_regslice_both__parameterized0' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_regslice_both__parameterized1' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_regslice_both__parameterized1' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_axis2xfMat_24_16_3840_2160_1_s' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_axis2xfMat_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_buf_RAM_S2P_BRAM_1R1W' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_buf_RAM_S2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_buf_RAM_S2P_BRAM_1R1W' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_buf_RAM_S2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_406_1' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_406_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_406_1' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_406_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_431_3' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_431_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_mux_5_3_24_1_1' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_mux_5_3_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_mux_5_3_24_1_1' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_mux_5_3_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_431_3' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_431_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xFModeProc_3_1_16_5_25_s' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeProc_3_1_16_5_25_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_mux_25_5_8_1_0' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_mux_25_5_8_1_0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_mux_25_5_8_1_0' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_mux_25_5_8_1_0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeProc_3_1_16_5_25_s' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeProc_3_1_16_5_25_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_mux_5_3_3_1_1' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_mux_5_3_3_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_mux_5_3_3_1_1' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_mux_5_3_3_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_frp_pipeline_valid' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:11]
+WARNING: [Synth 8-639] system function call 'value$plusargs' not supported [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_frp_pipeline_valid' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_frp_fifoout' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_fifoout.v:11]
+WARNING: [Synth 8-639] system function call 'value$plusargs' not supported [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_fifoout.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_frp_fifoout' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_fifoout.v:11]
+WARNING: [Synth 8-7071] port 'empty' of module 'modefilter_accel_frp_fifoout' is unconnected for instance 'pf_imgOutput_data_U' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop.v:689]
+WARNING: [Synth 8-7023] instance 'pf_imgOutput_data_U' of module 'modefilter_accel_frp_fifoout' has 16 connections declared, but only 15 given [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop.v:689]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xfMat2axis_24_16_3840_2160_1_s' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xfMat2axis_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_xfMat2axis_24_16_3840_2160_1_s' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_xfMat2axis_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w32_d4_S' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w32_d4_S_ShiftReg' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w32_d4_S_ShiftReg' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w32_d4_S' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w32_d2_S' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w32_d2_S_ShiftReg' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w32_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w32_d2_S' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w24_d3_S' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d3_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w24_d3_S_ShiftReg' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d3_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w24_d3_S_ShiftReg' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d3_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w24_d3_S' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d3_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w24_d2_S' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_fifo_w24_d2_S_ShiftReg' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w24_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_fifo_w24_d2_S' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0_ShiftReg' [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_accel' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'modefilter_design_modefilter_accel_0_0' (0#1) [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ip/modefilter_design_modefilter_accel_0_0/synth/modefilter_design_modefilter_accel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_control_s_axi.v:274]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[0].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[1].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[2].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[3].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[4].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[5].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[6].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[7].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[8].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[9].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[10].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[11].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[12].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[13].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[14].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[15].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[16].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[17].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[18].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[19].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[20].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[21].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[22].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[23].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[24].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[25].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[26].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[27].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[28].v1_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element incr_reg was removed.  [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ipshared/9658/hdl/verilog/modefilter_accel_frp_pipeline_valid.v:112]
+WARNING: [Synth 8-7129] Port reset in module modefilter_accel_start_for_modefilter_5_1_16_3840_2160_1_2_2_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module modefilter_accel_fifo_w24_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module modefilter_accel_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module modefilter_accel_fifo_w24_d3_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module modefilter_accel_fifo_w32_d4_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[1] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[0] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[1] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[0] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[1] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[0] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[1] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[0] in module modefilter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_start in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[29] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[28] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[27] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[26] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[25] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[24] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[23] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[22] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[21] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[20] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[19] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[18] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[17] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[16] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[15] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[14] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[13] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[12] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[11] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[10] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[9] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[8] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[7] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[6] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[5] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[4] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[3] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[2] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[1] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid[0] in module modefilter_accel_frp_fifoout is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module modefilter_accel_xFModeProc_3_1_16_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_empty_n in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_num_data_valid[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_num_data_valid[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_VITIS_LOOP_419_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_buf_RAM_S2P_BRAM_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[2] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_data_fifo_cap[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[1] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[0] in module modefilter_accel_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[31] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[30] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[29] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[28] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[27] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[26] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[25] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[24] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[23] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[22] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[21] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[20] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[19] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[18] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[17] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[16] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[15] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[14] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[13] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_dout[12] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_num_data_valid[1] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_num_data_valid[0] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_fifo_cap[1] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_fifo_cap[0] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[31] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[30] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[29] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[28] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[27] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[26] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[25] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[24] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[23] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[22] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[21] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_dout[20] in module modefilter_accel_modefilter_5_1_16_3840_2160_1_2_2_s is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2623.363 ; gain = 726.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2641.285 ; gain = 744.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2641.285 ; gain = 744.301
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.670 . Memory (MB): peak = 2641.285 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ip/modefilter_design_modefilter_accel_0_0/constraints/modefilter_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Xilinx/workspace/modefilter/modefilter.gen/sources_1/bd/modefilter_design/ip/modefilter_design_modefilter_accel_0_0/constraints/modefilter_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2756.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.612 . Memory (MB): peak = 2756.027 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2756.027 ; gain = 859.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2756.027 ; gain = 859.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2756.027 ; gain = 859.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'modefilter_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'modefilter_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'modefilter_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'modefilter_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2756.027 ; gain = 859.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   14 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 1     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 48    
+	   2 Input    5 Bit       Adders := 40    
+	   4 Input    5 Bit       Adders := 1     
+	   3 Input    4 Bit       Adders := 121   
+	   4 Input    4 Bit       Adders := 9     
+	   2 Input    4 Bit       Adders := 73    
+	   2 Input    3 Bit       Adders := 113   
+	   3 Input    3 Bit       Adders := 67    
+	   2 Input    2 Bit       Adders := 11    
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               51 Bit    Registers := 1     
+	               32 Bit    Registers := 16    
+	               24 Bit    Registers := 81    
+	               13 Bit    Registers := 12    
+	               12 Bit    Registers := 13    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1650  
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 326   
+	                4 Bit    Registers := 288   
+	                3 Bit    Registers := 177   
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 376   
++---RAMs : 
+	              50K Bit	(2160 X 24 bit)          RAMs := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 80    
+	   2 Input   13 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 73    
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 50    
+	   2 Input    5 Bit        Muxes := 76    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 14    
+	   3 Input    4 Bit        Muxes := 41    
+	   3 Input    3 Bit        Muxes := 57    
+	   2 Input    3 Bit        Muxes := 22    
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 31    
+	   4 Input    2 Bit        Muxes := 84    
+	   3 Input    2 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 155   
+	   8 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module modefilter_accel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module modefilter_accel_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:15 ; elapsed = 00:03:20 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                        | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_U/ram_reg   | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_1_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_2_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_3_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_4_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
++---------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:24 ; elapsed = 00:03:30 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:34 ; elapsed = 00:03:40 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                        | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_U/ram_reg   | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_1_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_2_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_3_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44  | buf_4_U/ram_reg | 2 K x 24(READ_FIRST)   | W |   | 2 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
++---------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_3_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_3_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_3_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_4_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_4_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/buf_4_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:48 ; elapsed = 00:03:54 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:58 ; elapsed = 00:04:04 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:58 ; elapsed = 00:04:04 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:01 ; elapsed = 00:04:07 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:01 ; elapsed = 00:04:07 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:02 ; elapsed = 00:04:07 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:02 ; elapsed = 00:04:07 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name                                                                                                                                                                                                                                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_reg_17549_pp0_iter21_reg_reg[7]    | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_1_reg_17573_pp0_iter21_reg_reg[7]  | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_2_reg_17596_pp0_iter21_reg_reg[7]  | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_3_reg_17619_pp0_iter21_reg_reg[7]  | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_4_reg_17644_pp0_iter21_reg_reg[7]  | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_5_reg_17669_pp0_iter21_reg_reg[7]  | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_6_reg_17695_pp0_iter21_reg_reg[7]  | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_7_reg_17723_pp0_iter21_reg_reg[7]  | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_8_reg_17751_reg[7]                 | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_8_reg_17751_pp0_iter21_reg_reg[7]  | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_9_reg_17779_pp0_iter1_reg_reg[7]   | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_9_reg_17779_pp0_iter21_reg_reg[7]  | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_10_reg_17807_pp0_iter1_reg_reg[7]  | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_10_reg_17807_pp0_iter21_reg_reg[7] | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_11_reg_17835_pp0_iter2_reg_reg[7]  | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_11_reg_17835_pp0_iter21_reg_reg[7] | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_12_reg_17863_pp0_iter2_reg_reg[7]  | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_12_reg_17863_pp0_iter21_reg_reg[7] | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_13_reg_17891_pp0_iter3_reg_reg[7]  | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_13_reg_17891_pp0_iter21_reg_reg[7] | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_14_reg_17919_pp0_iter3_reg_reg[7]  | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_14_reg_17919_pp0_iter21_reg_reg[7] | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_15_reg_17947_pp0_iter4_reg_reg[7]  | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_15_reg_17947_pp0_iter21_reg_reg[7] | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_16_reg_17975_pp0_iter4_reg_reg[7]  | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_16_reg_17975_pp0_iter21_reg_reg[7] | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_17_reg_18003_pp0_iter5_reg_reg[7]  | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_17_reg_18003_pp0_iter21_reg_reg[7] | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_18_reg_18031_pp0_iter5_reg_reg[7]  | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_18_reg_18031_pp0_iter21_reg_reg[7] | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_19_reg_18059_pp0_iter6_reg_reg[7]  | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_19_reg_18059_pp0_iter21_reg_reg[7] | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_20_reg_18087_pp0_iter6_reg_reg[7]  | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_20_reg_18087_pp0_iter21_reg_reg[7] | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_21_reg_18115_pp0_iter7_reg_reg[7]  | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_21_reg_18115_pp0_iter21_reg_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_22_reg_18143_pp0_iter7_reg_reg[7]  | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_22_reg_18143_pp0_iter21_reg_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_23_reg_18171_pp0_iter8_reg_reg[7]  | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_23_reg_18171_pp0_iter21_reg_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/trunc_ln73_24_reg_18199_pp0_iter21_reg_reg[7] | 23     | 8     | NO           | NO                 | YES               | 0      | 8       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_52_reg_22128_pp0_iter19_reg_reg[2]  | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_47_reg_22024_pp0_iter19_reg_reg[3]  | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_41_reg_21898_pp0_iter19_reg_reg[3]  | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_35_reg_21753_pp0_iter19_reg_reg[3]  | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_29_reg_21591_pp0_iter19_reg_reg[3]  | 7      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_227_reg_21429_pp0_iter19_reg_reg[4]     | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_153_reg_21059_pp0_iter19_reg_reg[4]     | 9      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_179_reg_21246_pp0_iter19_reg_reg[4]     | 9      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_96_reg_20833_pp0_iter19_reg_reg[4]      | 10     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_125_reg_21048_pp0_iter19_reg_reg[4]     | 10     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_65_reg_20822_pp0_iter19_reg_reg[4]      | 11     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_204_reg_21257_pp0_iter19_reg_reg[4]     | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_249_reg_21440_pp0_iter19_reg_reg[4]     | 7      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_32_reg_21743_pp0_iter19_reg_reg[3]  | 6      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_38_reg_21893_pp0_iter19_reg_reg[3]  | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_44_reg_22019_pp0_iter19_reg_reg[3]  | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_50_reg_22123_pp0_iter19_reg_reg[3]  | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_1_reg_18240_pp0_iter21_reg_reg[7]         | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_2_reg_18264_pp0_iter21_reg_reg[7]         | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_3_reg_18287_pp0_iter21_reg_reg[7]         | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_4_reg_18310_pp0_iter21_reg_reg[7]         | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_5_reg_18335_pp0_iter21_reg_reg[7]         | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_6_reg_18360_pp0_iter21_reg_reg[7]         | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_7_reg_18386_pp0_iter21_reg_reg[7]         | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_8_reg_18414_pp0_iter21_reg_reg[7]         | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_9_reg_18442_pp0_iter1_reg_reg[7]          | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_9_reg_18442_pp0_iter21_reg_reg[7]         | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_10_reg_18470_pp0_iter1_reg_reg[7]         | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_10_reg_18470_pp0_iter21_reg_reg[7]        | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_11_reg_18498_pp0_iter2_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_11_reg_18498_pp0_iter21_reg_reg[7]        | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_12_reg_18526_pp0_iter2_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_12_reg_18526_pp0_iter21_reg_reg[7]        | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_13_reg_18554_pp0_iter2_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_13_reg_18554_pp0_iter21_reg_reg[7]        | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_14_reg_18582_pp0_iter3_reg_reg[7]         | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_14_reg_18582_pp0_iter21_reg_reg[7]        | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_15_reg_18610_pp0_iter3_reg_reg[7]         | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_15_reg_18610_pp0_iter21_reg_reg[7]        | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_16_reg_18638_pp0_iter4_reg_reg[7]         | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_16_reg_18638_pp0_iter21_reg_reg[7]        | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_17_reg_18666_pp0_iter4_reg_reg[7]         | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_17_reg_18666_pp0_iter21_reg_reg[7]        | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_18_reg_18694_pp0_iter5_reg_reg[7]         | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_18_reg_18694_pp0_iter21_reg_reg[7]        | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_19_reg_18722_pp0_iter5_reg_reg[7]         | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_19_reg_18722_pp0_iter21_reg_reg[7]        | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_20_reg_18750_pp0_iter6_reg_reg[7]         | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_20_reg_18750_pp0_iter21_reg_reg[7]        | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_21_reg_18778_pp0_iter6_reg_reg[7]         | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_21_reg_18778_pp0_iter21_reg_reg[7]        | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_22_reg_18806_pp0_iter7_reg_reg[7]         | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_22_reg_18806_pp0_iter21_reg_reg[7]        | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_23_reg_18834_pp0_iter7_reg_reg[7]         | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_23_reg_18834_pp0_iter21_reg_reg[7]        | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_24_reg_18862_pp0_iter8_reg_reg[7]         | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_24_reg_18862_pp0_iter21_reg_reg[7]        | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_25_reg_18890_pp0_iter21_reg_reg[7]        | 23     | 8     | NO           | NO                 | YES               | 0      | 8       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_112_reg_22155_pp0_iter19_reg_reg[2] | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_107_reg_22057_pp0_iter19_reg_reg[3] | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_101_reg_21937_pp0_iter19_reg_reg[3] | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_95_reg_21798_pp0_iter19_reg_reg[3]  | 6      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_89_reg_21642_pp0_iter19_reg_reg[3]  | 7      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_623_reg_21483_pp0_iter19_reg_reg[4]     | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_549_reg_21125_pp0_iter19_reg_reg[4]     | 9      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_575_reg_21305_pp0_iter19_reg_reg[4]     | 9      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_492_reg_20910_pp0_iter19_reg_reg[4]     | 10     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_521_reg_21114_pp0_iter19_reg_reg[4]     | 10     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_461_reg_20899_pp0_iter19_reg_reg[4]     | 11     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_600_reg_21316_pp0_iter19_reg_reg[4]     | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_645_reg_21494_pp0_iter19_reg_reg[4]     | 7      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_92_reg_21793_pp0_iter19_reg_reg[3]  | 6      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_98_reg_21932_pp0_iter19_reg_reg[3]  | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_104_reg_22052_pp0_iter19_reg_reg[3] | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_110_reg_22150_pp0_iter19_reg_reg[3] | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_27_reg_18931_pp0_iter21_reg_reg[7]        | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_28_reg_18955_pp0_iter21_reg_reg[7]        | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_29_reg_18978_pp0_iter21_reg_reg[7]        | 13     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_30_reg_19001_pp0_iter21_reg_reg[7]        | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_31_reg_19026_pp0_iter21_reg_reg[7]        | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_32_reg_19051_pp0_iter21_reg_reg[7]        | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_33_reg_19077_pp0_iter21_reg_reg[7]        | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_34_reg_19105_pp0_iter21_reg_reg[7]        | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_35_reg_19133_pp0_iter1_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_35_reg_19133_pp0_iter21_reg_reg[7]        | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_36_reg_19161_pp0_iter1_reg_reg[7]         | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_36_reg_19161_pp0_iter21_reg_reg[7]        | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_37_reg_19189_pp0_iter2_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_37_reg_19189_pp0_iter21_reg_reg[7]        | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_38_reg_19217_pp0_iter2_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_38_reg_19217_pp0_iter21_reg_reg[7]        | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_39_reg_19245_pp0_iter2_reg_reg[7]         | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_39_reg_19245_pp0_iter21_reg_reg[7]        | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_40_reg_19273_pp0_iter3_reg_reg[7]         | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_40_reg_19273_pp0_iter21_reg_reg[7]        | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_41_reg_19301_pp0_iter3_reg_reg[7]         | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_41_reg_19301_pp0_iter21_reg_reg[7]        | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_42_reg_19329_pp0_iter4_reg_reg[7]         | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_42_reg_19329_pp0_iter21_reg_reg[7]        | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_43_reg_19357_pp0_iter4_reg_reg[7]         | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_43_reg_19357_pp0_iter21_reg_reg[7]        | 6      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_44_reg_19385_pp0_iter5_reg_reg[7]         | 7      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_44_reg_19385_pp0_iter21_reg_reg[7]        | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_45_reg_19413_pp0_iter5_reg_reg[7]         | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_45_reg_19413_pp0_iter21_reg_reg[7]        | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_46_reg_19441_pp0_iter6_reg_reg[7]         | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_46_reg_19441_pp0_iter21_reg_reg[7]        | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_47_reg_19469_pp0_iter6_reg_reg[7]         | 8      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_47_reg_19469_pp0_iter21_reg_reg[7]        | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_48_reg_19497_pp0_iter7_reg_reg[7]         | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_48_reg_19497_pp0_iter21_reg_reg[7]        | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_49_reg_19525_pp0_iter7_reg_reg[7]         | 9      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_49_reg_19525_pp0_iter21_reg_reg[7]        | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_50_reg_19553_pp0_iter8_reg_reg[7]         | 11     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_50_reg_19553_pp0_iter21_reg_reg[7]        | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/tmp_51_reg_19581_pp0_iter21_reg_reg[7]        | 23     | 8     | NO           | NO                 | YES               | 0      | 8       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_172_reg_22182_pp0_iter19_reg_reg[2] | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_167_reg_22095_pp0_iter19_reg_reg[3] | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_161_reg_21981_pp0_iter19_reg_reg[3] | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_155_reg_21848_pp0_iter19_reg_reg[3] | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_149_reg_21688_pp0_iter19_reg_reg[3] | 7      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_1019_reg_21537_pp0_iter19_reg_reg[4]    | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_945_reg_21191_pp0_iter19_reg_reg[4]     | 9      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_971_reg_21365_pp0_iter19_reg_reg[4]     | 9      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_888_reg_20982_pp0_iter19_reg_reg[4]     | 10     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_917_reg_21180_pp0_iter19_reg_reg[4]     | 10     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_857_reg_20971_pp0_iter19_reg_reg[4]     | 11     | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_996_reg_21376_pp0_iter19_reg_reg[4]     | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/count_1041_reg_21548_pp0_iter19_reg_reg[4]    | 7      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_152_reg_21838_pp0_iter19_reg_reg[3] | 6      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_158_reg_21971_pp0_iter19_reg_reg[3] | 5      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_164_reg_22085_pp0_iter19_reg_reg[3] | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/grp_xFModeProc_3_1_16_5_25_s_fu_427/zext_ln84_170_reg_22177_pp0_iter19_reg_reg[3] | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/icmp_ln178_reg_1310_pp0_iter27_reg_reg[0]                                         | 28     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/icmp_ln333_reg_1352_pp0_iter28_reg_reg[0]                                         | 27     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/ap_loop_exit_ready_pp0_iter28_reg_reg                                             | 28     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|modefilter_accel | modefilter_5_1_16_3840_2160_1_2_2_U0/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_s_fu_44/grp_xFModeNxN_3840_2160_3_16_1_2_2_0_2162_5_25_Pipeline_Col_Loop_fu_191/icmp_ln185_reg_1314_pp0_iter3_reg_reg[0]                                          | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | fifo_reg[30]   | 26     | 26         | 0      | 26      | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[2] | 24     | 24         | 24     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   124|
+|2     |LUT1     |    88|
+|3     |LUT2     |   356|
+|4     |LUT3     |  1436|
+|5     |LUT4     |   788|
+|6     |LUT5     |   840|
+|7     |LUT6     |  3550|
+|8     |MUXF7    |    29|
+|9     |RAMB36E1 |    15|
+|10    |SRL16E   |  1274|
+|11    |SRLC32E  |    53|
+|12    |FDRE     | 11352|
+|13    |FDSE     |    42|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:02 ; elapsed = 00:04:08 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:29 ; elapsed = 00:03:58 . Memory (MB): peak = 3003.188 ; gain = 991.461
+Synthesis Optimization Complete : Time (s): cpu = 00:04:02 ; elapsed = 00:04:08 . Memory (MB): peak = 3003.188 ; gain = 1106.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.418 . Memory (MB): peak = 3003.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 168 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3003.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2e2a6750
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:14 ; elapsed = 00:04:35 . Memory (MB): peak = 3003.188 ; gain = 1511.645
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1/modefilter_design_modefilter_accel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP modefilter_design_modefilter_accel_0_0, cache-ID = b5f62f4468041c95
+INFO: [Coretcl 2-1174] Renamed 50 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/modefilter/modefilter.runs/modefilter_design_modefilter_accel_0_0_synth_1/modefilter_design_modefilter_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file modefilter_design_modefilter_accel_0_0_utilization_synth.rpt -pb modefilter_design_modefilter_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 25 16:53:24 2023...

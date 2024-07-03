@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Aug 20 13:06:27 2023
+# Process ID: 32132
+# Current directory: C:/Xilinx/workspace/rgb2gray/rgb2gray.runs/rgb2gray_design_auto_pc_1_synth_1
+# Command line: vivado.exe -log rgb2gray_design_auto_pc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2gray_design_auto_pc_1.tcl
+# Log file: C:/Xilinx/workspace/rgb2gray/rgb2gray.runs/rgb2gray_design_auto_pc_1_synth_1/rgb2gray_design_auto_pc_1.vds
+# Journal file: C:/Xilinx/workspace/rgb2gray/rgb2gray.runs/rgb2gray_design_auto_pc_1_synth_1\vivado.jou
+# Running On: Kamal-PC, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 34226 MB
+#-----------------------------------------------------------
+source rgb2gray_design_auto_pc_1.tcl -notrace

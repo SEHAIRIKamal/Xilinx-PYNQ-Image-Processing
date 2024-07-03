@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Sep 23 11:55:57 2023
+# Process ID: 7332
+# Current directory: C:/Xilinx/workspace/Gaussianfilter/Gaussianfilter.runs/Gaussianblur_design_rst_ps7_0_100M_0_synth_1
+# Command line: vivado.exe -log Gaussianblur_design_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Gaussianblur_design_rst_ps7_0_100M_0.tcl
+# Log file: C:/Xilinx/workspace/Gaussianfilter/Gaussianfilter.runs/Gaussianblur_design_rst_ps7_0_100M_0_synth_1/Gaussianblur_design_rst_ps7_0_100M_0.vds
+# Journal file: C:/Xilinx/workspace/Gaussianfilter/Gaussianfilter.runs/Gaussianblur_design_rst_ps7_0_100M_0_synth_1\vivado.jou
+# Running On: Kamal-PC, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 34226 MB
+#-----------------------------------------------------------
+source Gaussianblur_design_rst_ps7_0_100M_0.tcl -notrace

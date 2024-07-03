@@ -1,0 +1,667 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Sep 20 08:39:53 2023
+| Host         : Kamal-PC running 64-bit major release  (build 9200)
+| Command      : report_drc -file bilateral_design_wrapper_drc_routed.rpt -pb bilateral_design_wrapper_drc_routed.pb -rpx bilateral_design_wrapper_drc_routed.rpx
+| Design       : bilateral_design_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 122
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining                                                  | 45         |
+| DPOP-1    | Warning  | PREG Output pipelining                                            | 27         |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 10         |
+| PDCN-1569 | Warning  | LUT equation term check                                           | 3          |
+| RTSTAT-10 | Warning  | No routable loads                                                 | 1          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 24         |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 12         |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_sp_dsp.i_calculate_Fr/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_sp_dsp.i_calculate_Fr/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_15ns_8ns_24ns_25_4_1_U81/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_15ns_8ns_24ns_25_4_1_U81/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_15ns_8ns_24ns_25_4_1_U83/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_15ns_8ns_24ns_25_4_1_U83/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_15ns_8ns_24ns_25_4_1_U85/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_15ns_8ns_24ns_25_4_1_U85/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_16ns_8ns_24ns_25_4_1_U80/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_16ns_8ns_24ns_25_4_1_U80/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_16ns_8ns_24ns_25_4_1_U82/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_16ns_8ns_24ns_25_4_1_U82/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_16ns_8ns_24ns_25_4_1_U84/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mac_muladd_16ns_8ns_24ns_25_4_1_U84/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/din0_buf1_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/din0_buf1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/din0_buf1_reg input bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/din0_buf1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_sp_dsp.i_calculate_Fr/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_sp_dsp.i_calculate_Fr/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#27 Warning
+PREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_sp_dsp.i_calculate_Fr/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_sp_dsp.i_calculate_Fr/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mul_ln107_4_reg_3945_reg multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mul_ln107_4_reg_3945_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mul_ln107_8_reg_3950_reg multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mul_ln107_8_reg_3950_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mul_ln107_reg_3912_reg multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/mul_ln107_reg_3912_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP multiplier stage bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A1)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+33 net(s) have no routable loads. The problem bus(es) and/or net(s) are bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+bilateral_design_i/axi_interconnect_1/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0]
+ (the first 15 of 21 listed nets/buses).
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#19 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#20 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#21 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#22 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#23 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#24 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#5 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#6 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#7 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U62/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#8 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U63/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#9 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fmul_32ns_32ns_32_4_max_dsp_1_U64/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#10 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_130/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#11 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_137/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#12 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+bilateral_design_i/bilateral_filter_acc_0/inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/grp_xFBilateralFloatMul_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U34/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

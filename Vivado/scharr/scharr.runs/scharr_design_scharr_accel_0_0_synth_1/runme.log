@@ -1,0 +1,486 @@
+
+*** Running vivado
+    with args -log scharr_design_scharr_accel_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source scharr_design_scharr_accel_0_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source scharr_design_scharr_accel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1455.949 ; gain = 155.289
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/Scharr'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: scharr_design_scharr_accel_0_0
+Command: synth_design -top scharr_design_scharr_accel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19340
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 2310.305 ; gain = 409.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'scharr_design_scharr_accel_0_0' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ip/scharr_design_scharr_accel_0_0/synth/scharr_design_scharr_accel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_control_s_axi' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_control_s_axi.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_control_s_axi' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_entry_proc' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_entry_proc' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_Block_entry2_proc' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_Block_entry2_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_Block_entry2_proc' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_Block_entry2_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_axis2xfMat_24_16_2160_3840_1_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_axis2xfMat_24_16_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_flow_control_loop_pipe_sequential_init' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_flow_control_loop_pipe_sequential_init' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_regslice_both' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_regslice_both' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_regslice_both__parameterized0' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_regslice_both__parameterized0' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_regslice_both__parameterized1' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_regslice_both__parameterized1' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_axis2xfMat_24_16_2160_3840_1_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_axis2xfMat_24_16_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_Scharr_0_16_0_2160_3840_1_2_2_2_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_Scharr_0_16_0_2160_3840_1_2_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_buf_RAM_S2P_BRbkb' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_buf_RAM_S2P_BRbkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_buf_RAM_S2P_BRbkb' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_buf_RAM_S2P_BRbkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFScharrFilterKernel_Pipeline_Clear_Row_Loop' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_Clear_Row_Loop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFScharrFilterKernel_Pipeline_Clear_Row_Loop' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_Clear_Row_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFScharrFilterKernel_Pipeline_Col_Loop' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFScharr3x3_1_3_16_0_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharr3x3_1_3_16_0_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFGradientX_16_0_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFGradientX_16_0_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFGradientX_16_0_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFGradientX_16_0_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFGradientY_16_0_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFGradientY_16_0_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFGradientY_16_0_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFGradientY_16_0_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFScharr3x3_1_3_16_0_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharr3x3_1_3_16_0_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_mux_3_2_24_1_1' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mux_3_2_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_mux_3_2_24_1_1' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mux_3_2_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFScharrFilterKernel_Pipeline_Col_Loop' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xFScharrFilterKernel_Pipeline_VITIS_LOOP_466_2' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_VITIS_LOOP_466_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFScharrFilterKernel_Pipeline_VITIS_LOOP_466_2' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_VITIS_LOOP_466_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_Scharr_0_16_0_2160_3840_1_2_2_2_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_Scharr_0_16_0_2160_3840_1_2_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_Pipeline_ColLoop' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_Pipeline_ColLoop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_mul_24ns_8ns_32_1_1' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mul_24ns_8ns_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_mul_24ns_8ns_32_1_1' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mul_24ns_8ns_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1_DSP48_0' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1_DSP48_0' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_Pipeline_ColLoop' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_Pipeline_ColLoop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/ip/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/ip/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_convertTo_2_0_2160_3840_1_2_2_8' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_convertTo_2_0_2160_3840_1_2_2_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_convertTo_2_0_2160_3840_1_2_2_8' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_convertTo_2_0_2160_3840_1_2_2_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xfMat2axis_8_0_2160_3840_1_s' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xfMat2axis_8_0_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_regslice_both__parameterized2' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_regslice_both__parameterized2' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_xfMat2axis_8_0_2160_3840_1_s' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xfMat2axis_8_0_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d5_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d5_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d5_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d5_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d5_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d5_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d6_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d6_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d6_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d6_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d6_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d6_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d6_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d6_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d4_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d4_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d4_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d4_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d2_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w32_d2_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w32_d2_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w24_d2_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w24_d2_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w24_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w24_d2_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w8_d2_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w8_d2_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w8_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w8_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w8_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w8_d2_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w16_d2_S' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w16_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_fifo_w16_d2_S_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w16_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w16_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w16_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_fifo_w16_d2_S' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_fifo_w16_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0_ShiftReg' [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_accel' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'scharr_design_scharr_accel_0_0' (0#1) [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ip/scharr_design_scharr_accel_0_0/synth/scharr_design_scharr_accel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_control_s_axi.v:296]
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_start_for_Scharr_0_16_0_2160_3840_1_2_2_2_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w8_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w16_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w24_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w32_d6_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w32_d5_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scharr_accel_fifo_w32_d4_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module scharr_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[31] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[30] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[29] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[28] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[27] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[26] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[25] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[24] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[23] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[22] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[21] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[20] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[19] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[18] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[17] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[16] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[31] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[30] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[29] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[28] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[27] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[26] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[25] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[24] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[23] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[22] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[21] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[20] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[19] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[18] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[17] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[16] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[3] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[2] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[3] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[2] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[1] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[0] in module scharr_accel_convertTo_2_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized39 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:59 . Memory (MB): peak = 2512.555 ; gain = 612.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:00 . Memory (MB): peak = 2512.555 ; gain = 612.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:37 ; elapsed = 00:01:00 . Memory (MB): peak = 2512.555 ; gain = 612.051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.665 . Memory (MB): peak = 2512.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ip/scharr_design_scharr_accel_0_0/constraints/scharr_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ip/scharr_design_scharr_accel_0_0/constraints/scharr_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Xilinx/workspace/scharr/scharr.runs/scharr_design_scharr_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/workspace/scharr/scharr.runs/scharr_design_scharr_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2538.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.348 . Memory (MB): peak = 2543.195 ; gain = 4.551
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:27 . Memory (MB): peak = 2543.195 ; gain = 642.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:27 . Memory (MB): peak = 2543.195 ; gain = 642.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Xilinx/workspace/scharr/scharr.runs/scharr_design_scharr_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 2543.195 ; gain = 642.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'scharr_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'scharr_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln392_reg_146_reg' and it is trimmed from '13' to '12' bits. [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_xFScharrFilterKernel_Pipeline_Clear_Row_Loop.v:158]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'scharr_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'scharr_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:01:33 . Memory (MB): peak = 2543.195 ; gain = 642.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/accumulateWeighted_0_2_2160_3840_1_2_2_2_U0/fmul_32ns_32ns_32_4_max_dsp_1_U114/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/accumulateWeighted_0_2_2160_3840_1_2_2_2_U0/fmul_32ns_32ns_32_4_max_dsp_1_U114/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/accumulateWeighted_0_2_2160_3840_1_2_2_2_U0/fmul_32ns_32ns_32_4_max_dsp_1_U114/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/accumulateWeighted_0_2_2160_3840_1_2_2_2_U0/fmul_32ns_32ns_32_4_max_dsp_1_U114/scharr_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_accumulateWeighted_0_2_2160_3840_1_2_2_2_Pipeline_ColLoop_fu_110/mac_muladd_24ns_8ns_32ns_33_4_1_U105/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '33' bits. [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_accumulateWeighted_0_2_2160_3840_1_2_2_2_Pipeline_ColLoop_fu_110/mac_muladd_24ns_8ns_32ns_33_4_1_U105/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '33' bits. [c:/Xilinx/workspace/scharr/scharr.gen/sources_1/bd/scharr_design/ipshared/cb0d/hdl/verilog/scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1.v:34]
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module scharr_accel.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module scharr_accel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:02:11 . Memory (MB): peak = 2551.359 ; gain = 650.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:00 ; elapsed = 00:02:36 . Memory (MB): peak = 2551.359 ; gain = 650.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:39 . Memory (MB): peak = 2551.359 ; gain = 650.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Scharr_0_16_0_2160_3840_1_2_2_2_U0/grp_xFScharrFilterKernel_16_0_2160_3840_3_16_0_1_2_2_2_10_1_3840_s_fu_46/buf_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:09 ; elapsed = 00:02:45 . Memory (MB): peak = 2551.418 ; gain = 650.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:23 ; elapsed = 00:03:00 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:23 ; elapsed = 00:03:00 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                             | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper                                         | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0                         | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1                         | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|scharr_accel_accumulateWeighted_0_2_2160_3840_1_2_2_2_s | (A''*B')'       | 24     | 8      | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|scharr_accel_mac_muladd_24ns_8ns_32ns_33_4_1_DSP48_0    | (C+(A''*B')')'  | 24     | 8      | 32     | -      | 33     | 2    | 1    | 1    | -    | -     | 1    | 1    | 
++--------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   247|
+|2     |DSP48E1  |     5|
+|7     |LUT1     |   156|
+|8     |LUT2     |   352|
+|9     |LUT3     |   577|
+|10    |LUT4     |   494|
+|11    |LUT5     |   457|
+|12    |LUT6     |   603|
+|13    |MUXCY    |    12|
+|14    |MUXF7    |     3|
+|15    |RAMB36E1 |     9|
+|16    |SRL16E   |   282|
+|17    |XORCY    |     8|
+|18    |FDRE     |  2867|
+|19    |FDSE     |   127|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:24 ; elapsed = 00:03:02 . Memory (MB): peak = 2564.980 ; gain = 664.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 228 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:02:52 . Memory (MB): peak = 2564.980 ; gain = 633.836
+Synthesis Optimization Complete : Time (s): cpu = 00:02:25 ; elapsed = 00:03:03 . Memory (MB): peak = 2564.980 ; gain = 664.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.346 . Memory (MB): peak = 2564.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 284 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2591.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+
+Synth Design complete | Checksum: c2127591
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:39 ; elapsed = 00:03:25 . Memory (MB): peak = 2591.055 ; gain = 1097.559
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/scharr/scharr.runs/scharr_design_scharr_accel_0_0_synth_1/scharr_design_scharr_accel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP scharr_design_scharr_accel_0_0, cache-ID = abdbab305bc55bee
+INFO: [Coretcl 2-1174] Renamed 102 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/scharr/scharr.runs/scharr_design_scharr_accel_0_0_synth_1/scharr_design_scharr_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file scharr_design_scharr_accel_0_0_utilization_synth.rpt -pb scharr_design_scharr_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 10:13:44 2023...

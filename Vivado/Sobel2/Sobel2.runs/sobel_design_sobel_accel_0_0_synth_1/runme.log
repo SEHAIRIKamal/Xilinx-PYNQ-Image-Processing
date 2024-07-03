@@ -1,0 +1,582 @@
+
+*** Running vivado
+    with args -log sobel_design_sobel_accel_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sobel_design_sobel_accel_0_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source sobel_design_sobel_accel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1461.961 ; gain = 161.391
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/Sobel2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: sobel_design_sobel_accel_0_0
+Command: synth_design -top sobel_design_sobel_accel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34556
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2315.465 ; gain = 410.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sobel_design_sobel_accel_0_0' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ip/sobel_design_sobel_accel_0_0/synth/sobel_design_sobel_accel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_control_s_axi' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_control_s_axi.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_control_s_axi' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_entry_proc' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_entry_proc' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_Block_entry2_proc' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_Block_entry2_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_Block_entry2_proc' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_Block_entry2_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_axis2xfMat_24_16_2160_3840_1_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_axis2xfMat_24_16_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_flow_control_loop_pipe_sequential_init' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_flow_control_loop_pipe_sequential_init' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_regslice_both' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_regslice_both' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_regslice_both__parameterized0' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_regslice_both__parameterized0' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_regslice_both__parameterized1' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_regslice_both__parameterized1' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_axis2xfMat_24_16_2160_3840_1_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_axis2xfMat_24_16_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_buf_RAM_S2P_bkb' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_buf_RAM_S2P_bkb.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_buf_RAM_S2P_bkb' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_buf_RAM_S2P_bkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFSobelFilter3x3_Pipeline_Col_Loop' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFSobel3x3_3_1_16_4_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobel3x3_3_1_16_4_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFGradientX3x3_16_4_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFGradientX3x3_16_4_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFGradientY3x3_16_4_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFGradientY3x3_16_4_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFSobel3x3_3_1_16_4_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobel3x3_3_1_16_4_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_mux_3_2_24_1_1' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_mux_3_2_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_mux_3_2_24_1_1' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_mux_3_2_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFSobelFilter3x3_Pipeline_Col_Loop' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFSobelFilter3x3_Pipeline_VITIS_LOOP_432_2' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_VITIS_LOOP_432_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFSobelFilter3x3_Pipeline_VITIS_LOOP_432_2' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_VITIS_LOOP_432_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_Block_entry25_proc' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_Block_entry25_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_Block_entry25_proc' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_Block_entry25_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xFMagnitudeKernel_Pipeline_colLoop' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFMagnitudeKernel_Pipeline_colLoop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFMagnitudeKernel_Pipeline_colLoop' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFMagnitudeKernel_Pipeline_colLoop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_convertTo_3_0_2160_3840_1_2_2_8' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_convertTo_3_0_2160_3840_1_2_2_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_convertTo_3_0_2160_3840_1_2_2_8' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_convertTo_3_0_2160_3840_1_2_2_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xfMat2axis_8_0_2160_3840_1_s' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xfMat2axis_8_0_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_regslice_both__parameterized2' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_regslice_both__parameterized2' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_xfMat2axis_8_0_2160_3840_1_s' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xfMat2axis_8_0_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w32_d6_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d6_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w32_d6_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d6_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w32_d6_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d6_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w32_d6_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d6_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w32_d5_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w32_d5_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d5_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w32_d5_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d5_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w32_d5_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w32_d2_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w32_d2_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w32_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w32_d2_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w24_d2_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w24_d2_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w24_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w24_d2_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w16_d2_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w16_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w16_d2_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w16_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w16_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w16_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w16_d2_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w16_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w12_d4_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w12_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w12_d4_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w12_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w12_d4_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w12_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w12_d4_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w12_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w8_d2_S' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_fifo_w8_d2_S_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w8_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w8_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w8_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_fifo_w8_d2_S' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0_ShiftReg' [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_accel' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_design_sobel_accel_0_0' (0#1) [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ip/sobel_design_sobel_accel_0_0/synth/sobel_design_sobel_accel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_control_s_axi.v:285]
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_start_for_Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w8_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w16_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w12_d4_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w24_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w32_d6_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_accel_fifo_w32_d5_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module sobel_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8_Pipeline_COL_LOOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[31] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[30] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[29] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[28] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[27] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[26] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[25] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[24] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[23] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[22] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[21] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[20] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[19] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[18] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[17] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[16] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[31] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[30] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[29] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[28] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[27] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[26] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[25] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[24] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[23] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[22] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[21] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[20] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[19] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[18] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[17] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[16] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_num_data_valid[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_1_data_fifo_cap[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[3] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[2] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_num_data_valid[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[3] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[2] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[1] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_shift_fifo_cap[0] in module sobel_accel_convertTo_3_0_2160_3840_1_2_2_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_num_data_valid[1] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_num_data_valid[0] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_fifo_cap[1] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_fifo_cap[0] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_num_data_valid[1] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_num_data_valid[0] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_fifo_cap[1] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_fifo_cap[0] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[1] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[0] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[1] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[0] in module sobel_accel_xFMagnitudeKernel_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_num_data_valid[1] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_num_data_valid[0] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_fifo_cap[1] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgx_data_fifo_cap[0] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_num_data_valid[1] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_num_data_valid[0] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_fifo_cap[1] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dstgy_data_fifo_cap[0] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[1] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_num_data_valid[0] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[1] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_dst_data_fifo_cap[0] in module sobel_accel_xFMagnitudeKernel_3_3_2160_3840_4_4_1_2_2_2_6_6_3840_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cols[31] in module sobel_accel_Block_entry25_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cols[30] in module sobel_accel_Block_entry25_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cols[29] in module sobel_accel_Block_entry25_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cols[28] in module sobel_accel_Block_entry25_proc is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2443.223 ; gain = 538.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2461.145 ; gain = 556.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2461.145 ; gain = 556.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 2461.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ip/sobel_design_sobel_accel_0_0/constraints/sobel_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ip/sobel_design_sobel_accel_0_0/constraints/sobel_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Xilinx/workspace/Sobel2/Sobel2.runs/sobel_design_sobel_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/workspace/Sobel2/Sobel2.runs/sobel_design_sobel_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2573.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 2573.758 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Xilinx/workspace/Sobel2/Sobel2.runs/sobel_design_sobel_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'sobel_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'sobel_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln360_reg_146_reg' and it is trimmed from '13' to '12' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFSobelFilter3x3_Pipeline_Clear_Row_Loop.v:158]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'sobel_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'sobel_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   5 Input   16 Bit       Adders := 6     
+	   4 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 20    
++---XORs : 
+	   2 Input      1 Bit         XORs := 22    
++---Registers : 
+	               32 Bit    Registers := 21    
+	               24 Bit    Registers := 19    
+	               16 Bit    Registers := 42    
+	               15 Bit    Registers := 6     
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 8     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 31    
+	                1 Bit    Registers := 198   
++---RAMs : 
+	              90K Bit	(3840 X 24 bit)          RAMs := 3     
++---Muxes : 
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 16    
+	   2 Input   24 Bit        Muxes := 18    
+	   2 Input   16 Bit        Muxes := 20    
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 12    
+	   8 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 36    
+	   4 Input    2 Bit        Muxes := 15    
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 168   
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_82/ap_return_int_reg_reg' and it is trimmed from '16' to '15' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_82/out_pix_6_reg_125_reg' and it is trimmed from '16' to '15' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:70]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientY3x3_16_4_s_fu_112/ap_return_int_reg_reg' and it is trimmed from '16' to '1' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:61]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientY3x3_16_4_s_fu_112/out_pix_2_reg_119_reg' and it is trimmed from '16' to '1' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:69]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_92/ap_return_int_reg_reg' and it is trimmed from '16' to '1' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_92/out_pix_6_reg_125_reg' and it is trimmed from '16' to '1' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:70]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientY3x3_16_4_s_fu_102/ap_return_int_reg_reg' and it is trimmed from '16' to '15' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:61]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientY3x3_16_4_s_fu_102/out_pix_2_reg_119_reg' and it is trimmed from '16' to '15' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:69]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_92/b2_val_read_reg_115_reg' and it is trimmed from '8' to '1' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:69]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_82/b0_val_read_reg_120_reg' and it is trimmed from '16' to '15' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:68]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientX3x3_16_4_s_fu_92/b0_val_read_reg_120_reg' and it is trimmed from '16' to '1' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientX3x3_16_4_s.v:68]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_xFSobel3x3_3_1_16_4_s_fu_360/grp_xFGradientY3x3_16_4_s_fu_102/b1_val_read_reg_114_reg' and it is trimmed from '15' to '14' bits. [c:/Xilinx/workspace/Sobel2/Sobel2.gen/sources_1/bd/sobel_design/ipshared/14db/hdl/verilog/sobel_accel_xFGradientY3x3_16_4_s.v:67]
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module sobel_accel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module sobel_accel_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                                 | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46  | buf_U/ram_reg   | 3 K x 24(READ_FIRST)   | W |   | 3 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46  | buf_1_U/ram_reg | 3 K x 24(READ_FIRST)   | W |   | 3 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46  | buf_2_U/ram_reg | 3 K x 24(READ_FIRST)   | W |   | 3 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                                 | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46  | buf_U/ram_reg   | 3 K x 24(READ_FIRST)   | W |   | 3 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46  | buf_1_U/ram_reg | 3 K x 24(READ_FIRST)   | W |   | 3 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
+|inst/\Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46  | buf_2_U/ram_reg | 3 K x 24(READ_FIRST)   | W |   | 3 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 3      | 
++----------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/buf_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sobel_accel | Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_177/icmp_ln250_reg_701_pp0_iter5_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_accel | Sobel_0_3_16_3_2160_3840_1_false_2_2_2_U0/grp_xFSobelFilter3x3_16_3_2160_3840_3_16_4_1_2_2_2_10_6_3840_false_s_fu_46/grp_xFSobelFilter3x3_Pipeline_Col_Loop_fu_177/ap_loop_exit_ready_pp0_iter5_reg_reg    | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[5] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[4] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3] | 12     | 12         | 12     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | SRL_SIG_reg[5] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   129|
+|2     |LUT1     |    91|
+|3     |LUT2     |   154|
+|4     |LUT3     |   385|
+|5     |LUT4     |   564|
+|6     |LUT5     |   339|
+|7     |LUT6     |   448|
+|8     |MUXF7    |     2|
+|9     |RAMB36E1 |     9|
+|10    |SRL16E   |   154|
+|11    |FDRE     |  1909|
+|12    |FDSE     |    76|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 2573.758 ; gain = 669.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 160 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 2573.758 ; gain = 556.543
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2573.758 ; gain = 669.156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 2573.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2573.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 98cad1a3
+INFO: [Common 17-83] Releasing license: Synthesis
+131 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2573.758 ; gain = 1073.359
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/Sobel2/Sobel2.runs/sobel_design_sobel_accel_0_0_synth_1/sobel_design_sobel_accel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP sobel_design_sobel_accel_0_0, cache-ID = 8b9a5fb1762df132
+INFO: [Coretcl 2-1174] Renamed 70 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/Sobel2/Sobel2.runs/sobel_design_sobel_accel_0_0_synth_1/sobel_design_sobel_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sobel_design_sobel_accel_0_0_utilization_synth.rpt -pb sobel_design_sobel_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 23:02:12 2023...

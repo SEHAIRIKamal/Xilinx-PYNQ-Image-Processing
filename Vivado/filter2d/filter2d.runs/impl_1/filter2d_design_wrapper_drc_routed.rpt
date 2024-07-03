@@ -1,0 +1,230 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Oct 19 20:42:34 2023
+| Host         : Kamal-PC running 64-bit major release  (build 9200)
+| Command      : report_drc -file filter2d_design_wrapper_drc_routed.rpt -pb filter2d_design_wrapper_drc_routed.pb -rpx filter2d_design_wrapper_drc_routed.rpx
+| Design       : filter2d_design_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 35
++-----------+----------+-------------------------+------------+
+| Rule      | Severity | Description             | Violations |
++-----------+----------+-------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining        | 18         |
+| DPOP-2    | Warning  | MREG Output pipelining  | 9          |
+| PDCN-1569 | Warning  | LUT equation term check | 6          |
+| RTSTAT-10 | Warning  | No routable loads       | 1          |
+| REQP-181  | Advisory | writefirst              | 1          |
++-----------+----------+-------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U42/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U42/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U43/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U43/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U44/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U44/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U45/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U45/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U46/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U46/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U47/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U47/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U48/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U48/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U49/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U49/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U50/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_24s_25_4_0_U50/Filter2d_accel_mac_muladd_16s_8ns_24s_25_4_0_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_25s_26_4_0_U52/Filter2d_accel_mac_muladd_16s_8ns_25s_26_4_0_DSP48_2_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_25s_26_4_0_U52/Filter2d_accel_mac_muladd_16s_8ns_25s_26_4_0_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_25s_26_4_0_U54/Filter2d_accel_mac_muladd_16s_8ns_25s_26_4_0_DSP48_2_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_25s_26_4_0_U54/Filter2d_accel_mac_muladd_16s_8ns_25s_26_4_0_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_25s_26_4_0_U56/Filter2d_accel_mac_muladd_16s_8ns_25s_26_4_0_DSP48_2_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_25s_26_4_0_U56/Filter2d_accel_mac_muladd_16s_8ns_25s_26_4_0_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_26s_27_4_0_U51/Filter2d_accel_mac_muladd_16s_8ns_26s_27_4_0_DSP48_1_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_26s_27_4_0_U51/Filter2d_accel_mac_muladd_16s_8ns_26s_27_4_0_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_26s_27_4_0_U53/Filter2d_accel_mac_muladd_16s_8ns_26s_27_4_0_DSP48_1_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_26s_27_4_0_U53/Filter2d_accel_mac_muladd_16s_8ns_26s_27_4_0_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_26s_27_4_0_U55/Filter2d_accel_mac_muladd_16s_8ns_26s_27_4_0_DSP48_1_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_26s_27_4_0_U55/Filter2d_accel_mac_muladd_16s_8ns_26s_27_4_0_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_27s_28_4_0_U57/Filter2d_accel_mac_muladd_16s_8ns_27s_28_4_0_DSP48_3_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_27s_28_4_0_U57/Filter2d_accel_mac_muladd_16s_8ns_27s_28_4_0_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_27s_28_4_0_U58/Filter2d_accel_mac_muladd_16s_8ns_27s_28_4_0_DSP48_3_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_27s_28_4_0_U58/Filter2d_accel_mac_muladd_16s_8ns_27s_28_4_0_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_27s_28_4_0_U59/Filter2d_accel_mac_muladd_16s_8ns_27s_28_4_0_DSP48_3_U/p_reg_reg input filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/mac_muladd_16s_8ns_27s_28_4_0_U59/Filter2d_accel_mac_muladd_16s_8ns_27s_28_4_0_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_11_reg_1336_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_11_reg_1336_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_12_reg_1341_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_12_reg_1341_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_16_reg_1356_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_16_reg_1356_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_20_reg_1361_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_20_reg_1361_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_21_reg_1366_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_21_reg_1366_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_25_reg_1381_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_25_reg_1381_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_3_reg_1302_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_3_reg_1302_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_7_reg_1331_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_7_reg_1331_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_reg_1297_reg multiplier stage filter2d_design_i/Filter2d_accel_0/inst/filter2D_0_3_3_16_16_3840_2160_1_2_2_U0/grp_xFFilter2Dkernel_16_16_3840_2160_16_16_1_2_2_10_10_2160_3_3_3_s_fu_171/grp_xFFilter2Dkernel_Pipeline_COL_LOOP_fu_196/grp_xFApplyFilter2D_16_16_3_3_3_s_fu_368/temp_reg_1297_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A4)+((~A4)*(~A6)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A1)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A1)+((~A1)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+67 net(s) have no routable loads. The problem bus(es) and/or net(s) are filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0],
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+filter2d_design_i/axi_mem_intercon/m01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0]
+ (the first 15 of 43 listed).
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (filter2d_design_i/axi_dma_1/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

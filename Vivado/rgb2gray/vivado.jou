@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue Jul  2 21:30:16 2024
+# Process ID: 32764
+# Current directory: C:/Xilinx/workspace/rgb2gray
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31528 C:\Xilinx\workspace\rgb2gray\rgb2gray.xpr
+# Log file: C:/Xilinx/workspace/rgb2gray/vivado.log
+# Journal file: C:/Xilinx/workspace/rgb2gray\vivado.jou
+# Running On: Kamal, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 6, Host memory: 34047 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/workspace/rgb2gray/rgb2gray.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+archive_project C:/Xilinx/workspace/rgb2gray.xpr.zip -temp_dir C:/Xilinx/workspace/rgb2gray/.Xil/Vivado-32764-Kamal -force -include_local_ip_cache -include_config_settings

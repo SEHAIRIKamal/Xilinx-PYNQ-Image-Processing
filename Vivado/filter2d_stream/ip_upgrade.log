@@ -1,0 +1,101 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Nov 11 12:06:16 2023
+| Host         : Kamal-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'filter2D_design_Filter2d_accel_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of filter2D_design_Filter2d_accel_0_0 (xilinx.com:hls:Filter2d_accel:1.0) from (Rev. 2113290669) to (Rev. 2113258189)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'filter2D_design_Filter2d_accel_0_0'.
+
+
+-Upgrade has removed interface 'filter_val'
+
+-Upgrade has added interface 'filter' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'filter2D_design_Filter2d_accel_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'filter_val_TDATA'
+
+-Upgrade has removed port 'filter_val_TREADY'
+
+-Upgrade has removed port 'filter_val_TVALID'
+
+-Upgrade has added port 'filter_TDATA'
+
+-Upgrade has added port 'filter_TREADY'
+
+-Upgrade has added port 'filter_TVALID'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Nov 11 11:05:13 2023
+| Host         : Kamal-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'filter2D_design_Filter2d_accel_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of filter2D_design_Filter2d_accel_0_0 (xilinx.com:hls:Filter2d_accel:1.0) from (Rev. 2113258189) to (Rev. 2113290669)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'filter2D_design_Filter2d_accel_0_0'.
+
+
+-Upgrade has removed interface 'filter'
+
+-Upgrade has added interface 'filter_val' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'filter2D_design_Filter2d_accel_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'filter_TDATA'
+
+-Upgrade has removed port 'filter_TREADY'
+
+-Upgrade has removed port 'filter_TVALID'
+
+-Upgrade has added port 'filter_val_TDATA'
+
+-Upgrade has added port 'filter_val_TREADY'
+
+-Upgrade has added port 'filter_val_TVALID'
+
+

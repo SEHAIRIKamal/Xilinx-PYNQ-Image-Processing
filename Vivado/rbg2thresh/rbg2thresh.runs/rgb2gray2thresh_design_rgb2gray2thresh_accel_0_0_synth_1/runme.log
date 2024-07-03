@@ -1,0 +1,537 @@
+
+*** Running vivado
+    with args -log rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1460.852 ; gain = 160.609
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/rgb2gray2thresh'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0
+Command: synth_design -top rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5388
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 2313.945 ; gain = 409.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ip/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0/synth/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_control_s_axi' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_control_s_axi.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_control_s_axi' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_entry_proc' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_entry_proc' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_flow_control_loop_pipe_sequential_init' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_flow_control_loop_pipe_sequential_init' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_regslice_both' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_regslice_both' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_regslice_both__parameterized0' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_regslice_both__parameterized0' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_regslice_both__parameterized1' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_regslice_both__parameterized1' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_mul_8ns_15ns_22_1_1' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mul_8ns_15ns_22_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_mul_8ns_15ns_22_1_1' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mul_8ns_15ns_22_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_regslice_both__parameterized2' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_regslice_both__parameterized2' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d5_S' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d5_S_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d5_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d5_S_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d5_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d5_S' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d5_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w24_d2_S' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w24_d2_S_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w24_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w24_d2_S' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w12_d2_S' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w12_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w12_d2_S_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w12_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w12_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w12_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w12_d2_S' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w12_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w9_d2_S' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w9_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w9_d2_S_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w9_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w9_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w9_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w9_d2_S' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w9_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d2_S' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d2_S_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_fifo_w8_d2_S' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0_ShiftReg' [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_accel' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0' (0#1) [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ip/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0/synth/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_control_s_axi.v:276]
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_start_for_xfMat2axis_8_0_2160_3840_1_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_start_for_rgb2gray_16_0_2160_3840_1_2_2_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_start_for_Threshold_0_0_2160_3840_1_2_2_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_fifo_w8_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_fifo_w9_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_fifo_w12_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_fifo_w24_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module rgb2gray2thresh_accel_fifo_w8_d5_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[1] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[0] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[1] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[0] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[1] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[0] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[1] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[0] in module rgb2gray2thresh_accel_xfMat2axis_8_0_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_Pipeline_colLoop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_num_data_valid[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput2_data_fifo_cap[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_num_data_valid[3] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_num_data_valid[2] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_num_data_valid[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_num_data_valid[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_fifo_cap[3] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_fifo_cap[2] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_fifo_cap[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh_fifo_cap[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_num_data_valid[3] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_num_data_valid[2] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_num_data_valid[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_num_data_valid[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_fifo_cap[3] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_fifo_cap[2] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_fifo_cap[1] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port maxval_fifo_cap[0] in module rgb2gray2thresh_accel_Threshold_0_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_num_data_valid[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_num_data_valid[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_fifo_cap[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_rows_fifo_cap[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_num_data_valid[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_num_data_valid[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_fifo_cap[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_src_cols_fifo_cap[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_num_data_valid[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[1] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgOutput_data_fifo_cap[0] in module rgb2gray2thresh_accel_rgb2gray_16_0_2160_3840_1_2_2_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TKEEP[2] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TKEEP[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TKEEP[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TSTRB[2] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TSTRB[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TSTRB[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TUSER[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TLAST[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TID[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgInput_TDEST[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_Pipeline_loop_col_zxi2mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_num_data_valid[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_data_fifo_cap[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_rows_c_num_data_valid[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_rows_c_num_data_valid[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_rows_c_fifo_cap[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_rows_c_fifo_cap[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_cols_c_num_data_valid[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_cols_c_num_data_valid[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_cols_c_fifo_cap[1] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_imgInput_cols_c_fifo_cap[0] in module rgb2gray2thresh_accel_axis2xfMat_24_16_2160_3840_1_s is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2427.797 ; gain = 522.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2427.797 ; gain = 522.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2427.797 ; gain = 522.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2427.797 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ip/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0/constraints/rgb2gray2thresh_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ip/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0/constraints/rgb2gray2thresh_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Xilinx/workspace/rbg2thresh/rbg2thresh.runs/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/workspace/rbg2thresh/rbg2thresh.runs/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2479.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2482.109 ; gain = 2.574
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Xilinx/workspace/rbg2thresh/rbg2thresh.runs/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'rgb2gray2thresh_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'rgb2gray2thresh_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'rgb2gray2thresh_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'rgb2gray2thresh_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 5     
+	               22 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               12 Bit    Registers := 8     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 12    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 22    
+	                1 Bit    Registers := 129   
++---Muxes : 
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 27    
+	   4 Input    2 Bit        Muxes := 14    
+	   2 Input    1 Bit        Muxes := 106   
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '23' bits. [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '23' bits. [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/a_reg_reg' and it is trimmed from '25' to '23' bits. [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '22' bits. [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '22' bits. [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '22' bits. [c:/Xilinx/workspace/rbg2thresh/rbg2thresh.gen/sources_1/bd/rgb2gray2thresh_design/ipshared/ca11/hdl/verilog/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1.v:33]
+DSP Report: Generating DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*(B:0xe98)')'.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+((A:0x2646)*B2)')'.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mul_ln886_reg_211_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mul_8ns_15ns_22_1_1_U33/tmp_product is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_12ns_22ns_22_4_1_U34/rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (C+(A''*(B:0x4b23)')')'.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/m is absorbed into DSP rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/mac_muladd_8ns_15ns_22ns_23_4_1_U35/rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1_U/p_reg_reg.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module rgb2gray2thresh_accel.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module rgb2gray2thresh_accel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:17 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                   | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0 | (A2*(B:0xe98)')'         | 22     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|rgb2gray2thresh_accel                                         | (PCIN+((A:0x2646)*B2)')' | 15     | 9      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1 | (C+(A''*(B:0x4b23)')')'  | 23     | 18     | 23     | -      | 23     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
++--------------------------------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:43 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:43 . Memory (MB): peak = 2482.109 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:44 . Memory (MB): peak = 2493.176 ; gain = 588.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:02:00 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:02:00 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:02:01 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:02:01 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:02:01 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:02:01 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                                                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rgb2gray2thresh_accel | rgb2gray_16_0_2160_3840_1_2_2_U0/grp_rgb2gray_16_0_2160_3840_1_2_2_Pipeline_columnloop_fu_66/ap_loop_exit_ready_pp0_iter4_reg_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[4] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rgb2gray2thresh_accel_mac_muladd_8ns_12ns_22ns_22_4_1_DSP48_0 | (A'*B)'         | 8      | 12     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|rgb2gray2thresh_accel                                         | (PCIN+(A*B')')' | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|rgb2gray2thresh_accel_mac_muladd_8ns_15ns_22ns_23_4_1_DSP48_1 | (C+(A''*B)')'   | 8      | 15     | 22     | -      | 23     | 2    | 0    | 0    | -    | -     | 1    | 1    | 
++--------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    27|
+|2     |DSP48E1 |     3|
+|5     |LUT1    |     7|
+|6     |LUT2    |    25|
+|7     |LUT3    |   120|
+|8     |LUT4    |   107|
+|9     |LUT5    |    64|
+|10    |LUT6    |   102|
+|11    |SRL16E  |    17|
+|12    |FDRE    |   402|
+|13    |FDSE    |    39|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:02:01 . Memory (MB): peak = 2497.926 ; gain = 593.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:53 . Memory (MB): peak = 2497.926 ; gain = 538.785
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:02:01 . Memory (MB): peak = 2497.926 ; gain = 593.098
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2509.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2513.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 565ba85a
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:02:18 . Memory (MB): peak = 2513.680 ; gain = 1014.211
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/rbg2thresh/rbg2thresh.runs/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_synth_1/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0, cache-ID = 6c0347990eb483bc
+INFO: [Coretcl 2-1174] Renamed 37 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/rbg2thresh/rbg2thresh.runs/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_synth_1/rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_utilization_synth.rpt -pb rgb2gray2thresh_design_rgb2gray2thresh_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 29 11:05:40 2023...

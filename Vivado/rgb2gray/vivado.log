@@ -1,0 +1,200 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue Jul  2 21:30:16 2024
+# Process ID: 32764
+# Current directory: C:/Xilinx/workspace/rgb2gray
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31528 C:\Xilinx\workspace\rgb2gray\rgb2gray.xpr
+# Log file: C:/Xilinx/workspace/rgb2gray/vivado.log
+# Journal file: C:/Xilinx/workspace/rgb2gray\vivado.jou
+# Running On: Kamal, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 6, Host memory: 34047 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project C:/Xilinx/workspace/rgb2gray/rgb2gray.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/rgb2gray'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'rgb2gray_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+rgb2gray_design_processing_system7_0_0
+rgb2gray_design_axi_interconnect_1_0
+rgb2gray_design_xbar_0
+rgb2gray_design_auto_us_1
+rgb2gray_design_auto_pc_0
+rgb2gray_design_xbar_1
+rgb2gray_design_axi_interconnect_0_0
+rgb2gray_design_auto_us_0
+rgb2gray_design_auto_pc_1
+rgb2gray_design_axis_dwidth_converter_0_0
+rgb2gray_design_axis_dwidth_converter_1_0
+rgb2gray_design_axi_dma_0_0
+rgb2gray_design_rst_ps7_0_100M_0
+
+INFO: [Project 1-230] Project 'rgb2gray.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1470.770 ; gain = 167.996
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+archive_project C:/Xilinx/workspace/rgb2gray.xpr.zip -temp_dir C:/Xilinx/workspace/rgb2gray/.Xil/Vivado-32764-Kamal -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Xilinx/workspace/rgb2gray/.Xil/Vivado-32764-Kamal' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/rgb2gray'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'rgb2gray_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+rgb2gray_design_processing_system7_0_0
+rgb2gray_design_axi_interconnect_1_0
+rgb2gray_design_xbar_0
+rgb2gray_design_auto_us_1
+rgb2gray_design_auto_pc_0
+rgb2gray_design_xbar_1
+rgb2gray_design_axi_interconnect_0_0
+rgb2gray_design_auto_us_0
+rgb2gray_design_auto_pc_1
+rgb2gray_design_axis_dwidth_converter_0_0
+rgb2gray_design_axis_dwidth_converter_1_0
+rgb2gray_design_axi_dma_0_0
+rgb2gray_design_rst_ps7_0_100M_0
+
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'rgb2gray_design_auto_pc_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_pc_1' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'rgb2gray_design_auto_pc_1' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_us_0' is locked:
+* IP definition 'AXI Data Width Converter (2.1)' for IP 'rgb2gray_design_auto_us_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_us_1' is locked:
+* IP definition 'AXI Data Width Converter (2.1)' for IP 'rgb2gray_design_auto_us_1' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axi_dma_0_0' is locked:
+* IP definition 'AXI Direct Memory Access (7.1)' for IP 'rgb2gray_design_axi_dma_0_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axis_dwidth_converter_0_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'rgb2gray_design_axis_dwidth_converter_0_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axis_dwidth_converter_1_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'rgb2gray_design_axis_dwidth_converter_1_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_processing_system7_0_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'www.digilentinc.com:pynq-z1:part0:1.0' used to customize the IP 'rgb2gray_design_processing_system7_0_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_rst_ps7_0_100M_0' is locked:
+* IP definition 'Processor System Reset (5.0)' for IP 'rgb2gray_design_rst_ps7_0_100M_0' (customized with software release 2023.1) has a different revision in the IP Catalog. * This IP has board specific outputs. Current project board 'unset' and the board 'www.digilentinc.com:pynq-z1:part0:1.0' used to customize the IP 'rgb2gray_design_rst_ps7_0_100M_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_xbar_0' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'rgb2gray_design_xbar_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_xbar_1' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'rgb2gray_design_xbar_1' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_processing_system7_0_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'www.digilentinc.com:pynq-z1:part0:1.0' used to customize the IP 'rgb2gray_design_processing_system7_0_0' do not match.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_xbar_0' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'rgb2gray_design_xbar_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'rgb2gray_design_auto_pc_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axi_interconnect_0_0' is locked:
+* IP definition 'AXI Interconnect (2.1)' for IP 'rgb2gray_design_axi_interconnect_0_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_xbar_1' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'rgb2gray_design_xbar_1' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_us_0' is locked:
+* IP definition 'AXI Data Width Converter (2.1)' for IP 'rgb2gray_design_auto_us_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_us_1' is locked:
+* IP definition 'AXI Data Width Converter (2.1)' for IP 'rgb2gray_design_auto_us_1' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_auto_pc_1' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'rgb2gray_design_auto_pc_1' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axi_interconnect_1_0' is locked:
+* IP definition 'AXI Interconnect (2.1)' for IP 'rgb2gray_design_axi_interconnect_1_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axis_dwidth_converter_0_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'rgb2gray_design_axis_dwidth_converter_0_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axis_dwidth_converter_1_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'rgb2gray_design_axis_dwidth_converter_1_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_axi_dma_0_0' is locked:
+* IP definition 'AXI Direct Memory Access (7.1)' for IP 'rgb2gray_design_axi_dma_0_0' (customized with software release 2023.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'rgb2gray_design_rst_ps7_0_100M_0' is locked:
+* IP definition 'Processor System Reset (5.0)' for IP 'rgb2gray_design_rst_ps7_0_100M_0' (customized with software release 2023.1) has a different revision in the IP Catalog. * This IP has board specific outputs. Current project board 'unset' and the board 'www.digilentinc.com:pynq-z1:part0:1.0' used to customize the IP 'rgb2gray_design_rst_ps7_0_100M_0' do not match.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'rgb2gray_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+rgb2gray_design_processing_system7_0_0
+rgb2gray_design_axi_interconnect_1_0
+rgb2gray_design_xbar_0
+rgb2gray_design_auto_us_1
+rgb2gray_design_auto_pc_0
+rgb2gray_design_xbar_1
+rgb2gray_design_axi_interconnect_0_0
+rgb2gray_design_auto_us_0
+rgb2gray_design_auto_pc_1
+rgb2gray_design_axis_dwidth_converter_0_0
+rgb2gray_design_axis_dwidth_converter_1_0
+rgb2gray_design_axi_dma_0_0
+rgb2gray_design_rst_ps7_0_100M_0
+
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_processing_system7_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_xbar_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_auto_us_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_auto_pc_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_xbar_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_axis_dwidth_converter_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_cvtcolor_rgb2gray_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_auto_pc_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_axis_dwidth_converter_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_axi_dma_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_auto_us_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'rgb2gray_design_rst_ps7_0_100M_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_xbar_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_auto_us_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_auto_pc_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_axis_dwidth_converter_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_cvtcolor_rgb2gray_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_auto_pc_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_axis_dwidth_converter_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_axi_dma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_auto_us_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'rgb2gray_design_rst_ps7_0_100M_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_auto_pc_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_auto_pc_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_auto_pc_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_auto_pc_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_auto_us_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_auto_us_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_auto_us_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_auto_us_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_axi_dma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_axi_dma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_axis_dwidth_converter_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_axis_dwidth_converter_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_axis_dwidth_converter_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_axis_dwidth_converter_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_cvtcolor_rgb2gray_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_cvtcolor_rgb2gray_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_processing_system7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_processing_system7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_rst_ps7_0_100M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'rgb2gray_design_xbar_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'rgb2gray_design_xbar_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Xilinx/workspace/rgb2gray.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 1537.262 ; gain = 66.492
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  2 21:46:01 2024...

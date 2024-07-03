@@ -1,0 +1,630 @@
+
+*** Running vivado
+    with args -log bilateral_design_bilateral_filter_acc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bilateral_design_bilateral_filter_acc_0_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bilateral_design_bilateral_filter_acc_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1460.797 ; gain = 160.785
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/workspaceHLS/bilateralfilter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bilateral_design_bilateral_filter_acc_0_0
+Command: synth_design -top bilateral_design_bilateral_filter_acc_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26004
+WARNING: [Synth 8-10515] begin/end is required for generate-for in this mode of Verilog [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:72]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2316.527 ; gain = 411.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bilateral_design_bilateral_filter_acc_0_0' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ip/bilateral_design_bilateral_filter_acc_0_0/synth/bilateral_design_bilateral_filter_acc_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_control_s_axi' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_control_s_axi.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_control_s_axi' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_Block_entry1_proc' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_Block_entry1_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_Block_entry1_proc' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_Block_entry1_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_s' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_flow_control_loop_pipe_sequential_init' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_flow_control_loop_pipe_sequential_init' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_regslice_both' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_regslice_both' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_regslice_both__parameterized0' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_regslice_both__parameterized0' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_regslice_both__parameterized1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_regslice_both__parameterized1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_s' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_axis2xfMat_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_bilateralFilter_3_0_16_3840_2160_1_2_2_s' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_bilateralFilter_3_0_16_3840_2160_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_buf_RAM_S2P_BRAM_1R1W' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_buf_RAM_S2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_buf_RAM_S2P_BRAM_1R1W' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_buf_RAM_S2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_RAcud' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_RAcud.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_RAcud' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_RAcud.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_1_dEe' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_1_dEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_1_dEe' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_exp_lut_sigma_color_1_dEe.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFBilateralExpf' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFBilateralExpf.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFBilateralExpf' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFBilateralExpf.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFBilateralFloatMul' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFBilateralFloatMul.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFBilateralFloatMul' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFBilateralFloatMul.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mul_10ns_10ns_20_1_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mul_10ns_10ns_20_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mul_10ns_10ns_20_1_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mul_10ns_10ns_20_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_413_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_413_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_413_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_413_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_425_2' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_425_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_425_2' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_425_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_436_3' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_436_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mux_3_2_24_1_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mux_3_2_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mux_3_2_24_1_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mux_3_2_24_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_436_3' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_436_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_exp_lubkb' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_exp_lubkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_exp_lubkb.dat' is read successfully [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_exp_lubkb.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_exp_lubkb' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_exp_lubkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/ip/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mux_3_2_2_1_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mux_3_2_2_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mux_3_2_2_1_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mux_3_2_2_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mul_16ns_8ns_24_1_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mul_16ns_8ns_24_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mul_16ns_8ns_24_1_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mul_16ns_8ns_24_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_frp_pipeline_valid' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:11]
+WARNING: [Synth 8-639] system function call 'value$plusargs' not supported [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_frp_pipeline_valid' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_frp_fifoout' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_fifoout.v:11]
+WARNING: [Synth 8-639] system function call 'value$plusargs' not supported [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_fifoout.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_frp_fifoout' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_fifoout.v:11]
+WARNING: [Synth 8-7071] port 'empty' of module 'bilateral_filter_accel_frp_fifoout' is unconnected for instance 'pf_imgOutput_data_U' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1515]
+WARNING: [Synth 8-7023] instance 'pf_imgOutput_data_U' of module 'bilateral_filter_accel_frp_fifoout' has 16 connections declared, but only 15 given [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1515]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_bilateralFilter_3_0_16_3840_2160_1_2_2_s' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_bilateralFilter_3_0_16_3840_2160_1_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w32_d4_S' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w32_d4_S_ShiftReg' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w32_d4_S_ShiftReg' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d4_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w32_d4_S' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d4_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w32_d2_S' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w32_d2_S_ShiftReg' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w32_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w32_d2_S' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w32_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w24_d3_S' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d3_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w24_d3_S_ShiftReg' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d3_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w24_d3_S_ShiftReg' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d3_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w24_d3_S' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d3_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w24_d2_S' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_fifo_w24_d2_S_ShiftReg' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w24_d2_S_ShiftReg' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d2_S.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_fifo_w24_d2_S' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_fifo_w24_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0_ShiftReg' [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0_ShiftReg' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_filter_accel' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bilateral_design_bilateral_filter_acc_0_0' (0#1) [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ip/bilateral_design_bilateral_filter_acc_0_0/synth/bilateral_design_bilateral_filter_acc_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_control_s_axi.v:274]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[0].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[1].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[2].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[3].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[4].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[5].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[6].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[7].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[8].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[9].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[10].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[11].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[12].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[13].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[14].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[15].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[16].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[17].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[18].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[19].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[20].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[21].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[22].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[23].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[24].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[25].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[26].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[27].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[28].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[29].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[30].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[31].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[32].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[33].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element genblk1[34].v1_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:69]
+WARNING: [Synth 8-6014] Unused sequential element incr_reg was removed.  [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_frp_pipeline_valid.v:112]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ashr_ln116_2_reg_4496_reg' and it is trimmed from '54' to '24' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1653]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ashr_ln116_1_reg_4476_reg' and it is trimmed from '54' to '24' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1652]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ashr_ln116_reg_4456_reg' and it is trimmed from '54' to '24' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1654]
+WARNING: [Synth 8-7129] Port reset in module bilateral_filter_accel_start_for_bilateralFilter_3_0_16_3840_2160_1_2_2_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module bilateral_filter_accel_fifo_w24_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module bilateral_filter_accel_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module bilateral_filter_accel_fifo_w24_d3_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module bilateral_filter_accel_fifo_w32_d4_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[1] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[0] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[1] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[0] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_Pipeline_loop_col_mat2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[1] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_num_data_valid[0] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[1] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port imgOutput_data_fifo_cap[0] in module bilateral_filter_accel_xfMat2axis_24_16_3840_2160_1_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized131 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized131 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized131 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized131 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized131 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized92 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized99 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized129 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized129 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized129 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized129 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized129 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tvalid in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[31] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[30] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[29] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[28] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[27] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[26] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[25] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[24] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[23] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[22] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[21] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[20] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[19] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[18] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[17] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[16] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[15] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[14] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[13] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[12] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[11] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[10] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[9] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[8] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[7] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[6] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[5] in module floating_point_v7_1_15_viv__parameterized7 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2601.059 ; gain = 695.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2601.059 ; gain = 695.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2601.059 ; gain = 695.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.942 . Memory (MB): peak = 2601.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ip/bilateral_design_bilateral_filter_acc_0_0/constraints/bilateral_filter_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ip/bilateral_design_bilateral_filter_acc_0_0/constraints/bilateral_filter_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Xilinx/workspace/bilateral/bilateral.runs/bilateral_design_bilateral_filter_acc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx/workspace/bilateral/bilateral.runs/bilateral_design_bilateral_filter_acc_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2660.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  FDE => FDRE: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.459 . Memory (MB): peak = 2671.922 ; gain = 11.258
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Xilinx/workspace/bilateral/bilateral.runs/bilateral_design_bilateral_filter_acc_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'bilateral_filter_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'bilateral_filter_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'col_3_reg_184_reg' and it is trimmed from '13' to '12' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_425_2.v:171]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln115_1_reg_4201_reg' and it is trimmed from '63' to '23' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1951]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln115_5_reg_4221_reg' and it is trimmed from '63' to '23' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1965]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln115_3_reg_4211_reg' and it is trimmed from '63' to '23' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1958]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln114_1_reg_4023_reg' and it is trimmed from '63' to '23' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1720]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'bilateral_filter_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'bilateral_filter_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_sign_delay' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFBilateralExpf_fu_150/fexp_32ns_32ns_32_10_full_dsp_1_U31/bilateral_filter_accel_fexp_32ns_32ns_32_10_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1:/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1:/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1:/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1:/bilateral_filter_accel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6_fu_165/uitofp_32ns_32_6_no_dsp_1_U38/bilateral_filter_accel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized55) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized55) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized5) to 'inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/fdiv_32ns_32ns_32_16_no_dsp_1_U65/bilateral_filter_accel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1:/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1:/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1:/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1:/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1:/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1:/bilateral_filter_accel_fpext_32ns_64_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln115_4_reg_4191_reg' and it is trimmed from '27' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1723]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln115_2_reg_4196_reg' and it is trimmed from '64' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1818]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16ns_8ns_24ns_25_4_1_U84/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16ns_8ns_24ns_25_4_1_U84/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln115_2_reg_4166_reg' and it is trimmed from '27' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1722]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln115_1_reg_4171_reg' and it is trimmed from '64' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1817]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16ns_8ns_24ns_25_4_1_U82/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16ns_8ns_24ns_25_4_1_U82/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln115_reg_4141_reg' and it is trimmed from '27' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1724]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln115_reg_4146_reg' and it is trimmed from '64' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1819]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16ns_8ns_24ns_25_4_1_U80/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16ns_8ns_24ns_25_4_1_U80/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_16ns_8ns_24ns_25_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln114_reg_3991_reg' and it is trimmed from '64' to '26' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1816]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_15ns_8ns_24ns_25_4_1_U85/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_15ns_8ns_24ns_25_4_1_U85/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_15ns_8ns_24ns_25_4_1_U83/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_15ns_8ns_24ns_25_4_1_U83/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_15ns_8ns_24ns_25_4_1_U81/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_15ns_8ns_24ns_25_4_1_U81/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '25' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_mac_muladd_15ns_8ns_24ns_25_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_load132_reg_3656_pp0_iter8_reg_reg' and it is trimmed from '24' to '8' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1757]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_load132_reg_3656_pp0_iter7_reg_reg' and it is trimmed from '24' to '8' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1756]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_load132_reg_3656_pp0_iter6_reg_reg' and it is trimmed from '24' to '8' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1755]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_load132_reg_3656_pp0_iter5_reg_reg' and it is trimmed from '24' to '8' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1754]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_load132_reg_3656_pp0_iter4_reg_reg' and it is trimmed from '24' to '8' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1753]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_load132_reg_3656_reg' and it is trimmed from '24' to '8' bits. [c:/Xilinx/workspace/bilateral/bilateral.gen/sources_1/bd/bilateral_design/ipshared/cdda/hdl/verilog/bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop.v:1752]
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module bilateral_filter_accel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module bilateral_filter_accel_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:04 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:20 ; elapsed = 00:02:25 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_1_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_1_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_1_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_2_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_2_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/buf_2_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/exp_lut_sigma_color_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/exp_lut_sigma_color_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/exp_lut_sigma_color_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bilateralFilter_3_0_16_3840_2160_1_2_2_U0/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_s_fu_46/grp_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop_fu_199/exp_lut_sigma_color_1_r_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:30 ; elapsed = 00:02:36 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:40 ; elapsed = 00:02:46 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:40 ; elapsed = 00:02:46 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                                                   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper__parameterized2                                                               | C'+(D+A)'*B'    | 6      | 17     | 43     | 16     | 43     | 0    | 1    | 1    | 1    | 1     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_339                                                           | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0                                                               | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1                                                               | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_338                                                                           | (C+A:B)'        | 0      | 6      | 0      | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper                                                                               | (C+A:B)'        | 30     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3                                                               | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (A'*B'')'       | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | ((A'*B'')')'    | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (A'*B'')'       | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | ((A'*B'')')'    | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (A'*B'')'       | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | ((A'*B'')')'    | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_189                                                           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5_190                                                           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized6_187                                                           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_160                                                           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5_161                                                           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized6_158                                                           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_131                                                           | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5_132                                                           | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized6_129                                                           | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (C+(A'*B'')')'  | 15     | 8      | 24     | -      | 25     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (C+(A'*B'')')'  | 15     | 8      | 24     | -      | 25     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (C+(A'*B'')')'  | 15     | 8      | 24     | -      | 25     | 1    | 2    | 2    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (C+(A''*B'')')' | 16     | 8      | 24     | -      | 25     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (C+(A''*B'')')' | 16     | 8      | 24     | -      | 25     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_16_3840_2160_3_16_1_2_2_16_3_Pipeline_Col_Loop | (C+(A''*B'')')' | 16     | 8      | 24     | -      | 25     | 2    | 2    | 2    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_77                                                            | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5_78                                                            | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized6_75                                                            | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_50                                                            | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5_51                                                            | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized6_48                                                            | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4                                                               | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized5                                                               | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized6                                                               | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|bilateral_filter_accel_xFbilateralFilterKernel_Pipeline_VITIS_LOOP_585_6                      | ((A*B)')'       | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 1    | 1    | 
++----------------------------------------------------------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   367|
+|2     |DSP48E1  |    38|
+|12    |LUT1     |   496|
+|13    |LUT2     |  1008|
+|14    |LUT3     |  1649|
+|15    |LUT4     |   815|
+|16    |LUT5     |   999|
+|17    |LUT6     |  1883|
+|18    |MUXCY    |   869|
+|19    |MUXF7    |   225|
+|20    |MUXF8    |     2|
+|21    |RAMB18E1 |     3|
+|24    |RAMB36E1 |     9|
+|25    |SRL16E   |   298|
+|26    |SRLC32E  |    77|
+|27    |XORCY    |   762|
+|28    |FDE      |     2|
+|29    |FDRE     |  5114|
+|30    |FDSE     |    84|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:44 ; elapsed = 00:02:50 . Memory (MB): peak = 2671.922 ; gain = 766.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 639 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:52 ; elapsed = 00:02:38 . Memory (MB): peak = 2671.922 ; gain = 695.793
+Synthesis Optimization Complete : Time (s): cpu = 00:02:44 ; elapsed = 00:02:50 . Memory (MB): peak = 2671.922 ; gain = 766.656
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.544 . Memory (MB): peak = 2671.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2277 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2691.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 250 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 248 instances
+  FDE => FDRE: 2 instances
+
+Synth Design complete | Checksum: 4bbdb9e2
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 179 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 2691.371 ; gain = 1191.512
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/bilateral/bilateral.runs/bilateral_design_bilateral_filter_acc_0_0_synth_1/bilateral_design_bilateral_filter_acc_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bilateral_design_bilateral_filter_acc_0_0, cache-ID = 3bce2a5b44f55ba5
+INFO: [Coretcl 2-1174] Renamed 563 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/workspace/bilateral/bilateral.runs/bilateral_design_bilateral_filter_acc_0_0_synth_1/bilateral_design_bilateral_filter_acc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bilateral_design_bilateral_filter_acc_0_0_utilization_synth.rpt -pb bilateral_design_bilateral_filter_acc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 20 08:33:42 2023...
