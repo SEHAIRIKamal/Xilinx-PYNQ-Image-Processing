@@ -1,5 +1,6 @@
 # UATL-Xilinx-PYNQ-Image-Processing
 This repository contains various image processing implementations on Python productivity for Zynq AMD (Xilinx) FPGA (PYNQ), which can run on various devices and boards with Zynq™, Zynq UltraScale+™, Kria™, Zynq RFSoC, Alveo™ accelerator boards, and AWS-F1.
+All files are generated and tested on the PYNQ-Z1 board.
 
 ![Release](https://img.shields.io/badge/Release-1.0.0-red.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Algorithms](https://img.shields.io/badge/Algorithms-14-black.svg)
 
